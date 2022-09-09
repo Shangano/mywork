@@ -1,0 +1,219 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    color: #292929;
+}
+
+blockquote {
+    font-style: italic;
+    margin: 0 0 2em 0;
+}
+
+.img1 {
+    background: url(img/moderna.jpeg);
+    background-size: cover;
+}
+
+.img2 {
+    background: url(img/jassen.jpg);
+    background-size: cover;
+    height: 400px;
+}
+
+.img3 {
+    background: url(img/pfizer.png);
+    background-size: cover;
+}
+
+.strapline {
+    margin-top: 100px;
+    position: relative;
+}
+
+
+
+.cta h1 {
+    margin: 0 0 20px 0;
+    position: relative;
+}
+
+.button {
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    background: #292929;
+    padding: .8em 1.5em;
+    width: 100%;
+}
+.button:hover {
+    background: black;
+}
+
+.grid1 {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    padding: 20px;
+}
+
+
+
+
+@media only screen and (min-width: 750px) {
+
+    .grid1 {
+        grid-template-columns: 3fr 6fr 1fr 5fr 10fr 2fr;
+        grid-template-rows: 100px auto 15px auto auto;
+        padding: 0;
+    }
+
+    .img1 {
+        grid-column: 1 / 3;
+        grid-row: 2 / 5;
+    }
+
+    .img2 {
+        grid-column: 2 / 4;
+        grid-row: 3 / 6;
+    }
+
+    .img3 {
+        grid-column: 5 / 7;
+        grid-row: 4 / 6;
+    }
+
+    .strapline {
+        grid-column: 3 / 6;
+        grid-row: 2 / 3;
+        padding: 0 16%;
+        text-align: center;
+        margin: 0;
+    }
+
+    .cta-wrapper {
+        grid-column: 4 / 6;
+        grid-row: 4 / 6;
+    }
+
+    .cta {
+        padding: 100px 0 100px 10%;
+    }
+    .cta h1 {
+        font-size: 6em;
+    }
+    .button {
+        width: auto;
+    }
+}
+
+@media only screen and (min-width: 1100px) {
+    .cta {
+        padding: 100px 0 100px 20%;
+    }
+
+    .cta h1:before {
+        content: "";
+        display: block;
+        height: 1em;
+        width: 1em;
+        background: url(img/badge.svg) no-repeat center center;
+        background-size: 80%;
+        position: absolute;
+        left: -120px;
+        top: 0;
+    }
+	@import url(https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css);
+section_footer{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    margin-top: 40000px;
+}
+section_footer{
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.5;
+}
+.f1{
+    background: #222;
+    color: #fff;
+    padding: 60px 0;
+    margin-top: 300px;
+}
+.container{
+    width: 100%;
+    max-width: 1100px;
+    padding: 0 20px;
+    margin: 0 auto;
+}
+li{
+    list-style: none;
+    line-height: 2;
+}
+.f1 a{
+    text-decoration: none;
+    color: #ccc;
+}
+.footer-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+.items{
+    flex-basis: 20%;
+}
+.items .logo{
+    text-transform: capitalize;
+    font-size: 1.4em;
+    color: #b6b6b6;
+}
+.items p{
+    margin: 1.2em 0;
+}
+.social{
+    display: flex;
+}
+.social a{
+    height: 30px;
+    width: 30px;
+    background: #383535;
+    border-radius: 5px;
+    margin:10px 5px;
+    text-align: center;
+}
+.social a i{
+    font-size: 1.3em;
+    line-height: 30px;
+}
+.items h3{
+    position: relative;
+    font-size: 1.3em;
+    margin-bottom: 1rem;
+    color: aliceblue;
+}
+.items h3::after{
+    content:"";
+    position: absolute;
+    width: 40px;
+    height: 3px;
+    background: #fff;
+    bottom: -4px;
+    left: 0;
+}
+hr{
+    opacity: .3;
+}
+footer .end{
+    text-align: center;
+    padding: 20px 0 0 0;
+}
+@media (max-width:640px){
+    .items{
+    flex-basis: 80%;
+    margin: auto;
+}
+
+
+}
